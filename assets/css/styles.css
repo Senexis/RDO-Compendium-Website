@@ -1191,6 +1191,7 @@ buy hr:before,section.common-line>h2:before {
 }
 
 .breadcrumbs a {
+    color: #fff;
     transition: color .2s
 }
 
@@ -3154,13 +3155,13 @@ section.events-module .list .event .tag {
     border: none
 }
 
-error {
+#error {
     justify-content: center;
     text-align: center;
     flex-shrink: 0!important
 }
 
-error,feedback {
+#error,feedback {
     display: flex;
     align-items: center
 }
@@ -4215,11 +4216,11 @@ showdown-and-elimination .feature.active {
     opacity: 1
 }
 
-feature-details {
+#feature-details {
     max-width: 100%
 }
 
-feature-details h1,feature-details h2 {
+#feature-details h1,#feature-details h2 {
     font-family: Rdr-lino;
     letter-spacing: .01em;
     word-spacing: .07em;
@@ -4228,43 +4229,43 @@ feature-details h1,feature-details h2 {
 }
 
 @media screen and (max-width: 479px) {
-    feature-details h1,feature-details h2 {
+    #feature-details h1,#feature-details h2 {
         padding:0 30px
     }
 }
 
-feature-details h1 {
+#feature-details h1 {
     margin: 60px auto 40px;
     text-align: center
 }
 
 @media screen and (max-width: 767px) {
-    feature-details h1 {
+    #feature-details h1 {
         margin:30px auto 20px
     }
 }
 
 @media screen and (max-width: 767px) {
-    feature-details h2 {
+    #feature-details h2 {
         margin-bottom:20px
     }
 }
 
-feature-details .top {
+#feature-details .top {
     position: relative
 }
 
-feature-details .top .mast {
+#feature-details .top .mast {
     margin-bottom: 60px
 }
 
 @media screen and (max-width: 767px) {
-    feature-details .top .mast {
+    #feature-details .top .mast {
         margin-bottom:30px
     }
 }
 
-feature-details .top.video-header .mast {
+#feature-details .top.video-header .mast {
     width: 100vw!important;
     max-width: none!important;
     left: 50%;
@@ -4272,11 +4273,11 @@ feature-details .top.video-header .mast {
     overflow-y: hidden
 }
 
-feature-details .top.video-header .mast:before {
+#feature-details .top.video-header .mast:before {
     padding-top: 45%!important
 }
 
-feature-details .top.video-header .mast video {
+#feature-details .top.video-header .mast video {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center bottom;
@@ -4289,18 +4290,18 @@ feature-details .top.video-header .mast video {
 }
 
 @media screen and (max-width: 991px) {
-    feature-details .top.video-header .mast:before {
+    #feature-details .top.video-header .mast:before {
         padding-top:56.25%!important
     }
 }
 
 @media screen and (min-width: 1440px) {
-    feature-details .top.video-header .mast:before {
+    #feature-details .top.video-header .mast:before {
         padding-top:38%!important
     }
 }
 
-feature-details .top .title {
+#feature-details .top .title {
     position: absolute;
     width: 100%;
     bottom: 30px;
@@ -4308,28 +4309,28 @@ feature-details .top .title {
     transform: translateX(-50%)
 }
 
-feature-details .top .title img {
+#feature-details .top .title img {
     max-width: 100%;
     margin-left: 30px
 }
 
 @media (min-width: 1439px) {
-    feature-details .top .title {
+    #feature-details .top .title {
         max-width:75vw
     }
 }
 
 @media screen and (max-width: 991px) {
-    feature-details .top .title {
+    #feature-details .top .title {
         padding:0 30px
     }
 
-    feature-details .top .title img {
+    #feature-details .top .title img {
         margin: 0
     }
 }
 
-feature-details .mast {
+#feature-details .mast {
     background-size: cover!important;
     background-repeat: none!important;
     background-position: 50%!important;
@@ -4337,54 +4338,54 @@ feature-details .mast {
     overflow: hidden
 }
 
-feature-details .mast:before {
+#feature-details .mast:before {
     content: "";
     padding-top: 41.66666667%;
     display: block
 }
 
-feature-details .content {
+#feature-details .content {
     margin: 0 auto 100px;
     justify-content: center;
     text-align: center
 }
 
-feature-details .content .desc {
+#feature-details .content .desc {
     padding: 0 15px
 }
 
 @media screen and (max-width: 479px) {
-    feature-details .content .desc {
+    #feature-details .content .desc {
         padding:0 30px
     }
 }
 
 @media screen and (max-width: 767px) {
-    feature-details .content {
+    #feature-details .content {
         margin:0 auto 50px
     }
 }
 
-feature-details .tips {
+#feature-details .tips {
     margin-bottom: 100px;
     justify-content: center;
     text-align: center
 }
 
 @media screen and (max-width: 767px) {
-    feature-details .tips {
+    #feature-details .tips {
         margin-bottom:50px
     }
 }
 
-feature-details .tips .tip {
+#feature-details .tips .tip {
     margin-bottom: 30px;
     position: relative!important;
     padding: 0 15px;
     height: auto
 }
 
-feature-details .tips .tip .image {
+#feature-details .tips .tip .image {
     position: relative!important;
     margin-bottom: 15px;
     opacity: 1;
@@ -4394,61 +4395,61 @@ feature-details .tips .tip .image {
     background-repeat: no-repeat!important
 }
 
-feature-details .tips .tip .image:before {
+#feature-details .tips .tip .image:before {
     content: "";
     padding-top: 56.25%;
     display: block
 }
 
-roles {
+#roles {
     max-width: 100%
 }
 
-roles h1,roles h2,roles h3 {
+#roles h1,roles h2,roles h3 {
     text-align: center
 }
 
-roles .d_role_img {
+#roles .d_role_img {
     margin-top: 15px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
 
-roles .d_role_img.bounty-hunter {
+#roles .d_role_img.bounty-hunter {
     background-image: url(/assets/img/features/roles/main/bounty-hunter-7c409bf99864a6c5aa6bb420482a6f80.jpg);
     background-size: contain;
     background-repeat: no-repeat
 }
 
-roles .d_role_img.trader {
+#roles .d_role_img.trader {
     background-image: url(/assets/img/features/roles/main/trader-fd96661dab4e041b1e402bd0f530a507.jpg);
     background-size: contain;
     background-repeat: no-repeat
 }
 
-roles .d_role_img.collector {
+#roles .d_role_img.collector {
     background-image: url(/assets/img/features/roles/main/collector-8070f0bb86764866d496c821205be1ae.jpg);
     background-size: contain;
     background-repeat: no-repeat
 }
 
-roles .d_role_img.moonshiner {
+#roles .d_role_img.moonshiner {
     background-image: url(/assets/img/features/roles/main/moonshiner-f5f7a3e498b0754bfde8ea00a8538b74.jpg);
     background-size: contain;
     background-repeat: no-repeat
 }
 
 @media screen and (max-width: 767px) {
-    roles .d_role_img {
+    #roles .d_role_img {
         display:none
     }
 }
 
-roles .d_role_img:before {
+#roles .d_role_img:before {
     padding-top: 128.61111111%
 }
 
-roles .d_role_img:after {
+#roles .d_role_img:after {
     content: "";
     position: absolute;
     top: 0;
@@ -4464,12 +4465,12 @@ roles .d_role_img:after {
     transition: opacity .3s ease
 }
 
-roles .top {
+#roles .top {
     position: relative;
     text-align: center
 }
 
-roles .top .mast {
+#roles .top .mast {
     margin-bottom: 60px;
     background-size: cover!important;
     background-repeat: none!important;
@@ -4478,66 +4479,66 @@ roles .top .mast {
     overflow: hidden
 }
 
-roles .top .mast:before {
+#roles .top .mast:before {
     content: "";
     padding-top: 41.66666667%;
     display: block
 }
 
 @media screen and (max-width: 767px) {
-    roles .top .mast {
+    #roles .top .mast {
         margin-bottom:30px
     }
 }
 
-roles .top h1 {
+#roles .top h1 {
     margin-bottom: 20px
 }
 
-roles .top .desc {
+#roles .top .desc {
     padding: 0 10px
 }
 
 @media screen and (max-width: 767px) {
-    roles .top {
+    #roles .top {
         padding:0 20px
     }
 }
 
-roles .details {
+#roles .details {
     margin-top: 25px;
     text-align: center
 }
 
-roles .details>.flex>* {
+#roles .details>.flex>* {
     padding: 0 10px;
     margin-bottom: 30px
 }
 
-roles .details h5 {
+#roles .details h5 {
     margin-bottom: 20px
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles-list {
+    #roles .roles-list {
         padding:0 50px
     }
 }
 
-roles .roles {
+#roles .roles {
     margin-top: 35px
 }
 
-roles .roles h2 {
+#roles .roles h2 {
     font-size: 2.375em;
     margin-bottom: 60px
 }
 
-roles .roles h2:before {
+#roles .roles h2:before {
     content: none
 }
 
-roles .roles .role {
+#roles .roles .role {
     position: relative;
     justify-content: center;
     padding: 7px 0 5px;
@@ -4546,48 +4547,48 @@ roles .roles .role {
     cursor: pointer
 }
 
-roles .roles .role h5 {
+#roles .roles .role h5 {
     transition: color .3s ease
 }
 
-roles .roles .role h5:lang(es_mx),roles .roles .role h5:lang(fr_fr),roles .roles .role h5:lang(pt_br),roles .roles .role h5:lang(ru_ru) {
+#roles .roles .role h5:lang(es_mx),roles .roles .role h5:lang(fr_fr),roles .roles .role h5:lang(pt_br),roles .roles .role h5:lang(ru_ru) {
     font-size: .8125em
 }
 
 @media screen and (max-width: 991px) {
-    roles .roles .role h5:lang(es_mx),roles .roles .role h5:lang(fr_fr),roles .roles .role h5:lang(pt_br),roles .roles .role h5:lang(ru_ru) {
+    #roles .roles .role h5:lang(es_mx),roles .roles .role h5:lang(fr_fr),roles .roles .role h5:lang(pt_br),roles .roles .role h5:lang(ru_ru) {
         font-size:1em
     }
 }
 
-roles .roles .role:hover h5 {
+#roles .roles .role:hover h5 {
     color: #c00
 }
 
-roles .roles .role:hover .d_role_img:after {
+#roles .roles .role:hover .d_role_img:after {
     opacity: 1
 }
 
 @supports (-ms-ime-align:auto) {
-    roles .roles .role:hover .d_role_img:after {
+    #roles .roles .role:hover .d_role_img:after {
         opacity: .2!important
     }
 }
 
-roles .roles .role.active h5 {
+#roles .roles .role.active h5 {
     color: #fff
 }
 
-roles .roles .role.active .d_role_img:after {
+#roles .roles .role.active .d_role_img:after {
     opacity: 0
 }
 
-roles .roles .role .content {
+#roles .roles .role .content {
     color: #fff;
     justify-content: center
 }
 
-roles .roles .role .content:before {
+#roles .roles .role .content:before {
     content: "";
     position: absolute;
     top: -5px;
@@ -4600,39 +4601,39 @@ roles .roles .role .content:before {
     transition: filter .3s ease
 }
 
-roles .roles .role .content:before.block:hover {
+#roles .roles .role .content:before.block:hover {
     color: #000
 }
 
-roles .roles .role .content:lang(es_mx):before,roles .roles .role .content:lang(fr_fr):before,roles .roles .role .content:lang(pt_br):before,roles .roles .role .content:lang(ru_ru):before {
+#roles .roles .role .content:lang(es_mx):before,roles .roles .role .content:lang(fr_fr):before,roles .roles .role .content:lang(pt_br):before,roles .roles .role .content:lang(ru_ru):before {
     top: -8px
 }
 
-roles .roles .role.active {
+#roles .roles .role.active {
     pointer-events: none
 }
 
-roles .roles .role.active .content {
+#roles .roles .role.active .content {
     color: #fff
 }
 
-roles .roles .role.active .content:before {
+#roles .roles .role.active .content:before {
     filter: grayscale(0)
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .role {
+    #roles .roles .role {
         margin-bottom:40px
     }
 }
 
-roles .roles .divider {
+#roles .roles .divider {
     position: relative;
     margin-top: 60px;
     margin-bottom: 60px
 }
 
-roles .roles .divider:before {
+#roles .roles .divider:before {
     content: "";
     height: 3px;
     width: 100%;
@@ -4646,118 +4647,118 @@ roles .roles .divider:before {
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .divider {
+    #roles .roles .divider {
         margin-top:10px!important;
         margin-bottom: 10px!important
     }
 }
 
-roles .roles .role-description {
+#roles .roles .role-description {
     margin: 10px 0 30px
 }
 
-roles .roles .role-description .current-role-sm {
+#roles .roles .role-description .current-role-sm {
     display: none;
     margin-bottom: 20px
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .role-description .current-role-sm {
+    #roles .roles .role-description .current-role-sm {
         display:block
     }
 }
 
-roles .roles .role-description>*>.desc {
+#roles .roles .role-description>*>.desc {
     margin-bottom: 20px;
     text-align: center
 }
 
-roles .roles .role-description>*>.desc .role-image {
+#roles .roles .role-description>*>.desc .role-image {
     width: 100%;
     background: #ccc
 }
 
-roles .roles .role-description>*>.desc .role-image.bounty-hunter {
+#roles .roles .role-description>*>.desc .role-image.bounty-hunter {
     background: url(/assets/img/features/roles/bounty-hunter-fb8595bb3bd9d1fc94f0e90efdab03d4.jpg) no-repeat 50%;
     background-size: cover
 }
 
-roles .roles .role-description>*>.desc .role-image.trader {
+#roles .roles .role-description>*>.desc .role-image.trader {
     background: url(/assets/img/features/roles/trader-fcbfe1bc06ed7ff7e42f54485e1105b9.jpg) no-repeat 50%;
     background-size: cover
 }
 
-roles .roles .role-description>*>.desc .role-image.collector {
+#roles .roles .role-description>*>.desc .role-image.collector {
     background: url(/assets/img/features/roles/collector-76ff7f09a24756334eec279a4ea74f8d.jpg) no-repeat 50%;
     background-size: cover
 }
 
-roles .roles .role-description>*>.desc .role-image.moonshiner {
+#roles .roles .role-description>*>.desc .role-image.moonshiner {
     background: url(/assets/img/features/roles/moonshiner-a7a650947c09c79b77dc27a852b07e41.jpg) no-repeat 50%;
     background-size: cover
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .role-description>*>.desc .role-image {
+    #roles .roles .role-description>*>.desc .role-image {
         margin-top:40px!important
     }
 }
 
-roles .roles .role-description>*>.desc h5 {
+#roles .roles .role-description>*>.desc h5 {
     margin-bottom: 20px;
     line-height: 130%
 }
 
-roles .roles .role-description>*>.desc h2 {
+#roles .roles .role-description>*>.desc h2 {
     margin: 60px auto 20px
 }
 
-roles .roles .role-description>*>.desc div:nth-child(2) {
+#roles .roles .role-description>*>.desc div:nth-child(2) {
     text-align: left;
     padding-left: 20px
 }
 
-roles .roles .role-description>*>.desc .role-summary {
+#roles .roles .role-description>*>.desc .role-summary {
     align-items: center
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .role-description>*>.desc .role-summary {
+    #roles .roles .role-description>*>.desc .role-summary {
         flex-direction:column-reverse
     }
 
-    roles .roles .role-description>*>.desc .role-summary>* {
+    #roles .roles .role-description>*>.desc .role-summary>* {
         padding: 0!important;
         text-align: center!important
     }
 }
 
-roles .roles .role-items {
+#roles .roles .role-items {
     position: relative
 }
 
-roles .roles .role-items .item {
+#roles .roles .role-items .item {
     padding: 10px 8px;
     opacity: .3;
     transition: opacity .75s
 }
 
-roles .roles .role-items .item.active {
+#roles .roles .role-items .item.active {
     opacity: 1
 }
 
-roles .roles .role-items .item.active .icon,roles .roles .role-items .item.active .icon-summary {
+#roles .roles .role-items .item.active .icon,roles .roles .role-items .item.active .icon-summary {
     transform: translateY(0)!important;
     opacity: 1!important
 }
 
 @media screen and (min-width: 768px) {
-    roles .roles .role-items .item:nth-of-type(2n) {
+    #roles .roles .role-items .item:nth-of-type(2n) {
         transition-delay:.3s!important
     }
 }
 
-roles .roles .role-items .item .wrapper {
+#roles .roles .role-items .item .wrapper {
     color: #fff;
     background-image: url(/assets/img/brush/gray-db988813b1da28f685ecb1b188eb35af.png);
     align-items: center;
@@ -4765,17 +4766,17 @@ roles .roles .role-items .item .wrapper {
     padding: 20px
 }
 
-roles .roles .role-items .item .wrapper.block:hover {
+#roles .roles .role-items .item .wrapper.block:hover {
     color: #c00
 }
 
-roles .roles .role-items .item .wrapper .icon {
+#roles .roles .role-items .item .wrapper .icon {
     transform: translateY(20px);
     opacity: .5;
     transition: transform .75s,opacity .75s
 }
 
-roles .roles .role-items .item .wrapper .icon.focus {
+#roles .roles .role-items .item .wrapper .icon.focus {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/focus-3f39218503f8c0db41852be8030c05d3.png);
@@ -4784,7 +4785,7 @@ roles .roles .role-items .item .wrapper .icon.focus {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.reinforced-lasso {
+#roles .roles .role-items .item .wrapper .icon.reinforced-lasso {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/reinforced-lasso-2d156cdcbc283b0ce005d2749bb37503.png);
@@ -4793,7 +4794,7 @@ roles .roles .role-items .item .wrapper .icon.reinforced-lasso {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.reverse-spin {
+#roles .roles .role-items .item .wrapper .icon.reverse-spin {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/reverse-spin-6fb3e5b7fe334a17387594648891d31e.png);
@@ -4802,7 +4803,7 @@ roles .roles .role-items .item .wrapper .icon.reverse-spin {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.tonics-satchel-upgrade {
+#roles .roles .role-items .item .wrapper .icon.tonics-satchel-upgrade {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/tonics-satchel-upgrade-4ed9dccb905de133e21511ddede4daf5.png);
@@ -4811,7 +4812,7 @@ roles .roles .role-items .item .wrapper .icon.tonics-satchel-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.eagle-eye-plus {
+#roles .roles .role-items .item .wrapper .icon.eagle-eye-plus {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/eagle-eye-plus-c6929dcb27fca38684dd2c7b32536c1d.png);
@@ -4820,7 +4821,7 @@ roles .roles .role-items .item .wrapper .icon.eagle-eye-plus {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.spin-up {
+#roles .roles .role-items .item .wrapper .icon.spin-up {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/spin-up-6fb3e5b7fe334a17387594648891d31e.png);
@@ -4829,7 +4830,7 @@ roles .roles .role-items .item .wrapper .icon.spin-up {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.kit-satchel-upgrade {
+#roles .roles .role-items .item .wrapper .icon.kit-satchel-upgrade {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/kit-satchel-upgrade-5c8ce558e7069947026acde82fcf2173.png);
@@ -4838,7 +4839,7 @@ roles .roles .role-items .item .wrapper .icon.kit-satchel-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.tracking-arrow-pamphlet {
+#roles .roles .role-items .item .wrapper .icon.tracking-arrow-pamphlet {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/tracking-arrow-pamphlet-d1511e9c567d5d5c23ebb8904c23d3f6.png);
@@ -4847,7 +4848,7 @@ roles .roles .role-items .item .wrapper .icon.tracking-arrow-pamphlet {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.reverse-spin-up {
+#roles .roles .role-items .item .wrapper .icon.reverse-spin-up {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/reverse-spin-up-6fb3e5b7fe334a17387594648891d31e.png);
@@ -4856,7 +4857,7 @@ roles .roles .role-items .item .wrapper .icon.reverse-spin-up {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.ducking {
+#roles .roles .role-items .item .wrapper .icon.ducking {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/ducking-96169a01ec573658cb8b7656742368fe.png);
@@ -4865,7 +4866,7 @@ roles .roles .role-items .item .wrapper .icon.ducking {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.bolas {
+#roles .roles .role-items .item .wrapper .icon.bolas {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/bolas-d6384fe43e7db29094bcdd038fe5eefb.png);
@@ -4874,7 +4875,7 @@ roles .roles .role-items .item .wrapper .icon.bolas {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.bounty-wagon {
+#roles .roles .role-items .item .wrapper .icon.bounty-wagon {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/bounty-wagon-dbd2a21f860989a8c3e96ee26909657c.png);
@@ -4883,7 +4884,7 @@ roles .roles .role-items .item .wrapper .icon.bounty-wagon {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.perception {
+#roles .roles .role-items .item .wrapper .icon.perception {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/perception-f6cc9b8c26282e7dd484e91acdcde552.png);
@@ -4892,7 +4893,7 @@ roles .roles .role-items .item .wrapper .icon.perception {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.alternating-flips {
+#roles .roles .role-items .item .wrapper .icon.alternating-flips {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/alternating-flips-6fb3e5b7fe334a17387594648891d31e.png);
@@ -4901,7 +4902,7 @@ roles .roles .role-items .item .wrapper .icon.alternating-flips {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.dual-gun-spinning {
+#roles .roles .role-items .item .wrapper .icon.dual-gun-spinning {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/dual-gun-spinning-bc9603750739b7172c213fafcd32219e.png);
@@ -4910,7 +4911,7 @@ roles .roles .role-items .item .wrapper .icon.dual-gun-spinning {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.stew-pot {
+#roles .roles .role-items .item .wrapper .icon.stew-pot {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/stew-pot-321aed037b62aef210eb9dba4abffefe.png);
@@ -4919,7 +4920,7 @@ roles .roles .role-items .item .wrapper .icon.stew-pot {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.ingredients-satchel-upgrade {
+#roles .roles .role-items .item .wrapper .icon.ingredients-satchel-upgrade {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/ingredients-satchel-upgrade-7ceb8bf95e67798c2c036f57bee946df.png);
@@ -4928,7 +4929,7 @@ roles .roles .role-items .item .wrapper .icon.ingredients-satchel-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.awareness {
+#roles .roles .role-items .item .wrapper .icon.awareness {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/awareness-3972ee7f8a586d2969736728074b2c9b.png);
@@ -4937,7 +4938,7 @@ roles .roles .role-items .item .wrapper .icon.awareness {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.canine-warning {
+#roles .roles .role-items .item .wrapper .icon.canine-warning {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/canine-warning-60ccbbc7134b96a7b5804741b35d0102.png);
@@ -4946,7 +4947,7 @@ roles .roles .role-items .item .wrapper .icon.canine-warning {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.medium-delivery-wagon {
+#roles .roles .role-items .item .wrapper .icon.medium-delivery-wagon {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/medium-delivery-wagon-dbd2a21f860989a8c3e96ee26909657c.png);
@@ -4955,7 +4956,7 @@ roles .roles .role-items .item .wrapper .icon.medium-delivery-wagon {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.weapons-locker {
+#roles .roles .role-items .item .wrapper .icon.weapons-locker {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/weapons-locker-f4f722cb0470178ad95262a24879a75d.png);
@@ -4964,7 +4965,7 @@ roles .roles .role-items .item .wrapper .icon.weapons-locker {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.lance-knife {
+#roles .roles .role-items .item .wrapper .icon.lance-knife {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/lance-knife-9c4a0f8671c3b5349ef18dff9e7b356b.png);
@@ -4973,7 +4974,7 @@ roles .roles .role-items .item .wrapper .icon.lance-knife {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.efficiency {
+#roles .roles .role-items .item .wrapper .icon.efficiency {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/efficiency-49a9c9bb9493f877e53455dbf1df7d2b.png);
@@ -4982,7 +4983,7 @@ roles .roles .role-items .item .wrapper .icon.efficiency {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.materials-satchel-upgrade {
+#roles .roles .role-items .item .wrapper .icon.materials-satchel-upgrade {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/materials-satchel-upgrade-c298a8bce7438e87d23b54f4369d7e98.png);
@@ -4991,7 +4992,7 @@ roles .roles .role-items .item .wrapper .icon.materials-satchel-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.large-delivery-wagon {
+#roles .roles .role-items .item .wrapper .icon.large-delivery-wagon {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/large-delivery-wagon-dbd2a21f860989a8c3e96ee26909657c.png);
@@ -5000,7 +5001,7 @@ roles .roles .role-items .item .wrapper .icon.large-delivery-wagon {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.hunting-wagon {
+#roles .roles .role-items .item .wrapper .icon.hunting-wagon {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/hunting-wagon-dbd2a21f860989a8c3e96ee26909657c.png);
@@ -5009,7 +5010,7 @@ roles .roles .role-items .item .wrapper .icon.hunting-wagon {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.protection {
+#roles .roles .role-items .item .wrapper .icon.protection {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/protection-6c4e2a99e1abc204ee9ead2b532555c4.png);
@@ -5018,7 +5019,7 @@ roles .roles .role-items .item .wrapper .icon.protection {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.divination {
+#roles .roles .role-items .item .wrapper .icon.divination {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/divination-59272caa4bcd67a49b6ff28d845db86f.png);
@@ -5027,7 +5028,7 @@ roles .roles .role-items .item .wrapper .icon.divination {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.shovel {
+#roles .roles .role-items .item .wrapper .icon.shovel {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/shovel-047baa4920c395913ee558572c1a216c.png);
@@ -5036,7 +5037,7 @@ roles .roles .role-items .item .wrapper .icon.shovel {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.potential {
+#roles .roles .role-items .item .wrapper .icon.potential {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/potential-3efda913cc4603567eec6e3145265af4.png);
@@ -5045,7 +5046,7 @@ roles .roles .role-items .item .wrapper .icon.potential {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.intuition {
+#roles .roles .role-items .item .wrapper .icon.intuition {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/intuition-e3e06620f5d651b800e6a57bddc3833b.png);
@@ -5054,7 +5055,7 @@ roles .roles .role-items .item .wrapper .icon.intuition {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.horse-saddlebag-upgrade {
+#roles .roles .role-items .item .wrapper .icon.horse-saddlebag-upgrade {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/horse-saddlebag-upgrade-63211fa6e44610e6d2cdbaafa599d877.png);
@@ -5063,7 +5064,7 @@ roles .roles .role-items .item .wrapper .icon.horse-saddlebag-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.refined-binoculars {
+#roles .roles .role-items .item .wrapper .icon.refined-binoculars {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/refined-binoculars-f591ba1cb8e17790cf9d76e6b45413ec.png);
@@ -5072,7 +5073,7 @@ roles .roles .role-items .item .wrapper .icon.refined-binoculars {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.aguila-machete {
+#roles .roles .role-items .item .wrapper .icon.aguila-machete {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/aguila-machete-b82a4bf6801681af03f8b420cbeba645.png);
@@ -5081,7 +5082,7 @@ roles .roles .role-items .item .wrapper .icon.aguila-machete {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.metal-detector {
+#roles .roles .role-items .item .wrapper .icon.metal-detector {
     height: 80px;
     width: 160px;
     background: url(/assets/img/features/roles/icons/metal-detector-bff27ad3c53d22e4acb62bcad2e86476.png);
@@ -5090,7 +5091,7 @@ roles .roles .role-items .item .wrapper .icon.metal-detector {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.equine-assistance {
+#roles .roles .role-items .item .wrapper .icon.equine-assistance {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/equine-assistance-8e5ad02273261fcb4fdbadf6c3a41f2e.png);
@@ -5099,7 +5100,7 @@ roles .roles .role-items .item .wrapper .icon.equine-assistance {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.horse-lantern {
+#roles .roles .role-items .item .wrapper .icon.horse-lantern {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/horse-lantern-6a323f4154d0af8712e96551bcad744c.png);
@@ -5108,7 +5109,7 @@ roles .roles .role-items .item .wrapper .icon.horse-lantern {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.valuables-satchel-upgrade {
+#roles .roles .role-items .item .wrapper .icon.valuables-satchel-upgrade {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/valuables-satchel-upgrade-28b676a77fa1a90593f1fd10b5bf1e44.png);
@@ -5117,7 +5118,7 @@ roles .roles .role-items .item .wrapper .icon.valuables-satchel-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.witford-compass {
+#roles .roles .role-items .item .wrapper .icon.witford-compass {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/witford-compass-d5bf387722ea5cce69fafc4c99d0008e.png);
@@ -5126,7 +5127,7 @@ roles .roles .role-items .item .wrapper .icon.witford-compass {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.bar-expansion {
+#roles .roles .role-items .item .wrapper .icon.bar-expansion {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/bar-expansion-7a106873608b6b349881af01c4ee3b84.png);
@@ -5135,7 +5136,7 @@ roles .roles .role-items .item .wrapper .icon.bar-expansion {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.levens-gun-belt {
+#roles .roles .role-items .item .wrapper .icon.levens-gun-belt {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/levens-gun-belt-e9b5cd9254110270577039638bbb5563.png);
@@ -5144,7 +5145,7 @@ roles .roles .role-items .item .wrapper .icon.levens-gun-belt {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.sabotage {
+#roles .roles .role-items .item .wrapper .icon.sabotage {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/sabotage-83d077bf795fe95511c65c50139b7933.png);
@@ -5153,7 +5154,7 @@ roles .roles .role-items .item .wrapper .icon.sabotage {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.band-expansion {
+#roles .roles .role-items .item .wrapper .icon.band-expansion {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/band-expansion-0948a88dc9bb5d377d796e4cc39cd9b5.png);
@@ -5162,7 +5163,7 @@ roles .roles .role-items .item .wrapper .icon.band-expansion {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.still-upgrade {
+#roles .roles .role-items .item .wrapper .icon.still-upgrade {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/still-upgrade-145ae12cf7ba3ee43ef266b7f2a04975.png);
@@ -5171,7 +5172,7 @@ roles .roles .role-items .item .wrapper .icon.still-upgrade {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.flammable-moonshine {
+#roles .roles .role-items .item .wrapper .icon.flammable-moonshine {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/flammable-moonshine-17a9b6972c7837a2b2268b2528aa2879.png);
@@ -5180,7 +5181,7 @@ roles .roles .role-items .item .wrapper .icon.flammable-moonshine {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.sawed-off-shotgun-variant {
+#roles .roles .role-items .item .wrapper .icon.sawed-off-shotgun-variant {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/sawed-off-shotgun-variant-8ca31d0b4d54f573d3d3574ce81f886f.png);
@@ -5189,7 +5190,7 @@ roles .roles .role-items .item .wrapper .icon.sawed-off-shotgun-variant {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.nevin-hipflask {
+#roles .roles .role-items .item .wrapper .icon.nevin-hipflask {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/nevin-hipflask-bb87fd2927769f89fb479d603e2e74aa.png);
@@ -5198,7 +5199,7 @@ roles .roles .role-items .item .wrapper .icon.nevin-hipflask {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.darrow-buckle {
+#roles .roles .role-items .item .wrapper .icon.darrow-buckle {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/darrow-buckle-078b53f714de2df10dc0f8aa21864249.png);
@@ -5207,7 +5208,7 @@ roles .roles .role-items .item .wrapper .icon.darrow-buckle {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.recipes {
+#roles .roles .role-items .item .wrapper .icon.recipes {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/recipes-4f78f517805419c8d261b1af8bd4ddba.png);
@@ -5216,7 +5217,7 @@ roles .roles .role-items .item .wrapper .icon.recipes {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.poison-bottle-pamphlet {
+#roles .roles .role-items .item .wrapper .icon.poison-bottle-pamphlet {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/poison-bottle-pamphlet-8acaa0557e6045141c1c8cbcb007d942.png);
@@ -5225,7 +5226,7 @@ roles .roles .role-items .item .wrapper .icon.poison-bottle-pamphlet {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon.master-distiller {
+#roles .roles .role-items .item .wrapper .icon.master-distiller {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/master-distiller-958fecf116e493b4e6573096efd27c07.png);
@@ -5234,7 +5235,7 @@ roles .roles .role-items .item .wrapper .icon.master-distiller {
     background-position: 50%
 }
 
-roles .roles .role-items .item .wrapper .icon-summary {
+#roles .roles .role-items .item .wrapper .icon-summary {
     flex-direction: column;
     padding-left: 15px;
     transform: translateY(10px);
@@ -5242,80 +5243,80 @@ roles .roles .role-items .item .wrapper .icon-summary {
     transition: transform .75s,opacity .75s
 }
 
-roles .roles .role-items .item .wrapper h4,roles .roles .role-items .item .wrapper h5 {
+#roles .roles .role-items .item .wrapper h4,roles .roles .role-items .item .wrapper h5 {
     margin-bottom: 10px
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles .role-items .item .wrapper {
+    #roles .roles .role-items .item .wrapper {
         padding:20px 15px
     }
 
-    roles .roles .role-items .item .wrapper h5 {
+    #roles .roles .role-items .item .wrapper h5 {
         font-size: 1.5625em
     }
 }
 
 @media screen and (max-width: 479px) {
-    roles .roles .role-items {
+    #roles .roles .role-items {
         flex-direction:column
     }
 }
 
 @media screen and (max-width: 767px) {
-    roles .roles {
+    #roles .roles {
         padding:0 20px
     }
 }
 
-roles .bonuses {
+#roles .bonuses {
     padding: 0 10px;
     text-align: center
 }
 
-roles .bonuses a {
+#roles .bonuses a {
     opacity: .8;
     transition: opacity .2s ease
 }
 
-roles .bonuses a:hover {
+#roles .bonuses a:hover {
     opacity: 1
 }
 
-roles .bonuses a h6 {
+#roles .bonuses a h6 {
     color: #c00;
     display: inline-block
 }
 
-roles .bonuses .bonus:first-child {
+#roles .bonuses .bonus:first-child {
     padding-right: 30px
 }
 
-roles .bonuses .bonus:nth-child(2) {
+#roles .bonuses .bonus:nth-child(2) {
     padding-left: 30px
 }
 
 @media screen and (max-width: 991px) {
-    roles .bonuses .bonus {
+    #roles .bonuses .bonus {
         padding:0 15px!important
     }
 }
 
-roles .bonuses h2 {
+#roles .bonuses h2 {
     margin-top: 60px;
     font-size: 2.375em
 }
 
-roles .bonuses .wrapper {
+#roles .bonuses .wrapper {
     align-items: center;
     text-align: center
 }
 
-roles .bonuses .wrapper:first-of-type {
+#roles .bonuses .wrapper:first-of-type {
     margin-bottom: 20px
 }
 
-roles .bonuses .content-icon {
+#roles .bonuses .content-icon {
     display: inline-block;
     zoom:1;*display: inline;
     vertical-align: middle;
@@ -5323,7 +5324,7 @@ roles .bonuses .content-icon {
     margin-bottom: 20px
 }
 
-roles .bonuses .content-icon.roles-rank {
+#roles .bonuses .content-icon.roles-rank {
     height: 80px;
     width: 80.56537px;
     background: url(/assets/img/features/roles/icons/roles-rank-9f2ccbcce1d123acac3d6fafb90952db.png);
@@ -5333,19 +5334,19 @@ roles .bonuses .content-icon.roles-rank {
 }
 
 @media screen and (max-width: 767px) {
-    roles .bonuses .content-icon {
+    #roles .bonuses .content-icon {
         margin-bottom:0
     }
 }
 
 @media screen and (max-width: 767px) {
-    roles .bonuses .content-desc {
+    #roles .bonuses .content-desc {
         text-align:left;
         padding-left: 15px
     }
 }
 
-roles .bonuses.bounty-hunter .roles-xp {
+#roles .bonuses.bounty-hunter .roles-xp {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/bounty-hunter-6ebfc453a3149db26e7283a90619d886.png);
@@ -5354,7 +5355,7 @@ roles .bonuses.bounty-hunter .roles-xp {
     background-position: 50%
 }
 
-roles .bonuses.trader .roles-xp {
+#roles .bonuses.trader .roles-xp {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/trader-693b2442d2a234ded05862f42f7d33a5.png);
@@ -5363,7 +5364,7 @@ roles .bonuses.trader .roles-xp {
     background-position: 50%
 }
 
-roles .bonuses.collector .roles-xp {
+#roles .bonuses.collector .roles-xp {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/collector-3bc3e82a82a7704f633d40235482eb67.png);
@@ -5372,7 +5373,7 @@ roles .bonuses.collector .roles-xp {
     background-position: 50%
 }
 
-roles .bonuses.moonshiner .roles-xp {
+#roles .bonuses.moonshiner .roles-xp {
     height: 80px;
     width: 80px;
     background: url(/assets/img/features/roles/icons/moonshiner-0c7a268a591b3baa9985c742fab0c0ee.png);
@@ -5382,7 +5383,7 @@ roles .bonuses.moonshiner .roles-xp {
 }
 
 @media screen and (max-width: 767px) {
-    roles .bonuses {
+    #roles .bonuses {
         padding:0 25px
     }
 }

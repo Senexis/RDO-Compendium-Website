@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-<article>
-
-  <header>
+<div id="roles">
+  {% include breadcrumbs.html %}
+  <section class="top common-line">
     <h1>{{ page.title | escape }}</h1>
-  </header>
-
-  <section>
-    {{ content }}
+    <div class="content flex">
+      {{ content }}
+    </div>
   </section>
-
-</article>
+</div>
