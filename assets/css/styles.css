@@ -2068,11 +2068,11 @@ footer#site-footer>div.middle a.subscribe {
     background-size: cover;
     color: #c00;
     padding: 10px 20px;
-    display: inline-block!important;
-    zoom:1!important;*display: inline!important;
-    vertical-align: top!important;
-    float: none !important!important;
-    margin-bottom: 20px;
+    display: inline-block !important;
+    zoom:1 !important;
+    display: inline !important;
+    vertical-align: top !important;
+    float: none !important;
     text-decoration: none;
     transition: opacity .2s ease;
     opacity: .8
@@ -4412,10 +4412,6 @@ showdown-and-elimination .feature.active {
     content: "";
     padding-top: 56.25%;
     display: block
-}
-
-{
-    max-width: 100%
 }
 
 h1,roles h2,roles h3 {

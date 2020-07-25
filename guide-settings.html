@@ -1,0 +1,141 @@
+---
+layout: page
+title: Guide - Settings
+permalink: /guide-settings/
+---
+
+<section class="top common-line">
+    <div class="content flex">
+        <div class="flex-xxs-12 flex-sm-10 flex-sm-offset-1">
+            <div class="desc">To configure the bot, a selection of different settings are available in the bot which you
+                can change. This quick guide provides an in-depth look at all the different settings, what they do, and
+                what they can be set to.</div>
+        </div>
+    </div>
+</section>
+<section class="roles common-line">
+    <div class="flex role-description">
+        <div class="flex-xxs-12 flex-sm-10 flex-sm-offset-1">
+            <h2>Settings</h2>
+            <div class="desc">
+                Settings are divided into multiple categories in this guide. The categories are roles, pings, and
+                utility. Settings are saved on a per-Discord basis, so if you add the bot to multiple servers, you will
+                need to configure the bot on all the different guilds you administrate.
+            </div>
+            <div class="flex">
+                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
+            </div>
+            <h4>Role Settings</h4>
+            <div class="desc">
+                The <code>adminRole</code> (Administrator role) and <code>modRole</code> (Moderator role) settings are
+                used to control which users have access to certain commands. The Administrators can change settings for
+                you whenever they want, and Moderators are able to retrieve some stats about the bot at will. While the
+                Moderators role is currently underutilized, further abilities like the ability to purge the bot's
+                messages will be added in the future.<br><br>By default, these settings are set to the
+                <code>@Administrator</code> and <code>@Moderator</code> roles. These roles may not be available within
+                your Discord server. If this is the case, the <code>!settings</code> command will display these settings
+                as being set to "an invalid role". This also means that no user will be assigned the permissions that
+                come with it for safety.<br><br>To change these settings to your own roles, you can simply use the
+                <code>!settings set adminRole @YourRole</code> command. This will set the Administrator or Moderator
+                role to the role of your choosing. You can check whether the setting was changed successfully at any
+                time using <code>!settings</code>. If at any point you want to reset a setting to the default role, you
+                are able to use the <code>!settings reset adminRole</code> command for both the Administrator role and
+                the Moderator role.
+            </div>
+            <div class="flex">
+                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
+            </div>
+            <h4>Ping Settings</h4>
+            <div class="desc">
+                <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The <code>events</code> and <code>status</code>
+                settings can be used to ping a certain channel when an event is about to start or when the Rockstar
+                Games Service Status changes. This means that you can have a <code>#freeroam-events</code> channel where
+                a message gets posted by the bot 10 minutes before a certain event starts, or a
+                <code>#service-status</code> channel that will be notified when the Rockstar servers are experiencing
+                issues and when those are resolved.<br><br>By default, nothing will be pinged, so you'll need to
+                manually change the settings before you'll start receiving pings. To set it up, use the
+                <code>!settings set events</code> command. You can find the different options for all the ping settings
+                in detail below.
+            </div>
+            <h5>Freeroam Events</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set events all #channel</h5>
+                            <div class="desc">Changes the settings to ping all Freeroam Events in the
+                                <code>#channel</code> channel without mentioning any role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set events all #channel @Freeroam-Events</h5>
+                            <div class="desc">Changes the settings to ping all Freeroam Events in the
+                                <code>#channel</code> channel, mentioning the <code>@Freeroam-Events</code> role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set events TR #channel</h5>
+                            <div class="desc">Changes the settings to ping only the Trade Route event in the
+                                <code>#channel</code> channel without mentioning any role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set events TR #channel @Trade-Route</h5>
+                            <div class="desc">Changes the settings to ping only the Trade Route event in the
+                                <code>#channel</code> channel, mentioning the <code>@Role</code> role.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Service Status</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set status #channel</h5>
+                            <div class="desc">Changes the settings to ping Rockstar Service status changes in the
+                                <code>#channel</code> channel without mentioning any role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set status #channel @Service-Status</h5>
+                            <div class="desc">Changes the settings to ping Rockstar Service status changes in the
+                                <code>#channel</code> channel, mentioning the <code>@Service-Status</code> role.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desc">
+                If at any point you decide you no longer want to receive pings in a channel, you can use the
+                <code>!settings remove events all #channel</code> or <code>!settings remove status #channel</code>
+                commands for these settings. This will will disable the bot pinging the channels.
+            </div>
+            <div class="flex">
+                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
+            </div>
+            <h4>Utility Settings</h4>
+            <div class="desc">
+                The utility settings, specifically <code>language</code> and <code>prefix</code> will allow you to tweak
+                how the bot behaves. The language setting changes the language, and the prefix setting changes the
+                command prefix for that Discord server. For details about the language setting, <a
+                    href="/guide-basics/">check out the "Basics" guide</a>, and to change the prefix of the bot within
+                your Discord server, use <code>!settings set prefix ?</code>, where <code>?</code> is the prefix you
+                want it to have. It can be as or short as you want.<br><br>If you want to reset these settings to their
+                defaults, use the <code>!settings reset prefix</code> and <code>!settings reset language</code> to reset
+                the settings back to <code>!</code> and <code>en</code> respectively.
+            </div>
+        </div>
+    </div>
+</section>
