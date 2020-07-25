@@ -36,6 +36,9 @@ social:
     - https://twitter.com/RDOCompendium
     - https://discord.gg/RBZVHQ7
 
+# Google Analytics
+google_analytics: UA-110509796-3
+
 # Build settings
 plugins:
   - jekyll-sitemap
