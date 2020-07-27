@@ -47,7 +47,8 @@ permalink: /guide-settings/
             </div>
             <h4>Ping Settings</h4>
             <div class="desc">
-                <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The <code>events</code> and <code>status</code>
+                <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The <code>events</code>
+                and <code>status</code>
                 settings can be used to ping a certain channel when an event is about to start or when the Rockstar
                 Games Service Status changes. This means that you can have a <code>#freeroam-events</code> channel where
                 a message gets posted by the bot 10 minutes before a certain event starts, or a
@@ -117,6 +118,48 @@ permalink: /guide-settings/
                     </div>
                 </div>
             </div>
+            <h5>News</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set news #channel</h5>
+                            <div class="desc">Changes the settings to ping Newswire changes in the
+                                <code>#channel</code> channel without mentioning any role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set news #channel @News</h5>
+                            <div class="desc">Changes the settings to ping Newswire changes in the
+                                <code>#channel</code> channel, mentioning the <code>@News</code> role.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Patches</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set patches #channel</h5>
+                            <div class="desc">Changes the settings to ping Game Update changes in the
+                                <code>#channel</code> channel without mentioning any role.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>!settings set patches #channel @Patches</h5>
+                            <div class="desc">Changes the settings to ping Game Update changes in the
+                                <code>#channel</code> channel, mentioning the <code>@Patches</code> role.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="desc">
                 If at any point you decide you no longer want to receive pings in a channel, you can use the
                 <code>!settings remove events all #channel</code> or <code>!settings remove status #channel</code>
@@ -130,11 +173,12 @@ permalink: /guide-settings/
                 The utility settings, specifically <code>language</code> and <code>prefix</code> will allow you to tweak
                 how the bot behaves. The language setting changes the language, and the prefix setting changes the
                 command prefix for that Discord server. For details about the language setting, <a
-                    href="/guide-basics/">check out the "Basics" guide</a>, and to change the prefix of the bot within
-                your Discord server, use <code>!settings set prefix ?</code>, where <code>?</code> is the prefix you
-                want it to have. It can be as or short as you want.<br><br>If you want to reset these settings to their
-                defaults, use the <code>!settings reset prefix</code> and <code>!settings reset language</code> to reset
-                the settings back to <code>!</code> and <code>en</code> respectively.
+                    href="/guide-basics/#languages">check out the "Basics" guide</a>, and to change the prefix of the
+                bot within your Discord server, use <code>!settings set prefix ?</code>, where <code>?</code> is the
+                prefix you want it to have. It can be as or short as you want.<br><br>If you want to reset these
+                settings to their defaults, use the <code>!settings reset prefix</code> and
+                <code>!settings reset language</code> to reset the settings back to <code>!</code> and <code>en</code>
+                respectively.
             </div>
         </div>
     </div>
