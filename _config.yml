@@ -55,3 +55,7 @@ exclude:
 
 compress_html:
   comments: ["<!-- ", " -->"]
+
+support_link: https://discord.gg/RBZVHQ7
+invite_link: https://discord.com/oauth2/authorize?client_id=721728527598354502&permissions=379968&scope=bot
+patreon_link: https://www.patreon.com/bePatron?u=27626198

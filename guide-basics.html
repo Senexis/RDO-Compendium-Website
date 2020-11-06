@@ -7,11 +7,13 @@ permalink: /guide-basics/
 <section class="top common-line">
     <div class="content flex">
         <div class="flex-xxs-12 flex-sm-10 flex-sm-offset-1">
-            <div class="desc">Starting out, the bot may seem a bit intimidating to you. However, fret not since this
+            <div class="desc">
+                Starting out, the bot may seem a bit intimidating to you. However, fret not since this
                 page will help you to get started with the bot by explaining the different commands, and giving you tips
                 and tricks on finding whatever it is you want to find within Red&nbsp;Dead&nbsp;Redemption&nbsp;2 and
                 Red&nbsp;Dead&nbsp;Online.<br><br>If you ever get stuck, feel free to reach out on the bot's Discord
-                server for additional support.</div>
+                server for additional support.
+            </div>
         </div>
     </div>
 </section>
@@ -28,7 +30,7 @@ permalink: /guide-basics/
             <div class="flex">
                 <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
             </div>
-            <h4>Compendium</h4>
+            <h4 id="compendium">Compendium</h4>
             <div class="desc">
                 These are the commands that let you find in-game content that's available in the game.
             </div>
@@ -36,23 +38,31 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!daily</h5>
-                            <div class="desc">Displays today's Daily Challenges based on community posts.</div>
+                            <h5><code>!cycles</code></h5>
+                            <div class="desc">Find today's Collectible cycles.</div>
                         </div>
                     </div>
                 </div>
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!events</h5>
-                            <div class="desc">Displays the next Free Mode Event and when it'll start.</div>
+                            <h5><code>!daily</code></h5>
+                            <div class="desc">Displays today's Daily Challenges.</div>
                         </div>
                     </div>
                 </div>
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!find</h5>
+                            <h5><code>!events &lt;query?&gt;</code></h5>
+                            <div class="desc">Displays the next Free Roam Event and when it'll start.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!find &lt;query&gt;</code></h5>
                             <div class="desc">Find and get information about anything in the bot's Compendium.</div>
                         </div>
                     </div>
@@ -60,7 +70,7 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!list</h5>
+                            <h5><code>!list &lt;category&gt;</code></h5>
                             <div class="desc">Sends you a private message Compendium items based on a category.</div>
                         </div>
                     </div>
@@ -68,82 +78,21 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!nazar</h5>
-                            <div class="desc">Find Madam Nazar's location based on community posts.</div>
+                            <h5><code>!nazar</code></h5>
+                            <div class="desc">Find Madam Nazar's location.</div>
                         </div>
                     </div>
                 </div>
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!weekly</h5>
-                            <div class="desc">Find this week's Weekly Collectible Request based on community posts.
-                            </div>
+                            <h5><code>!weekly</code></h5>
+                            <div class="desc">Find this week's Weekly Collectible Request.</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h4>Rockstar</h4>
-            <div class="desc">
-                These commands find information about the game that is not within the game.
-            </div>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!clown</h5>
-                            <div class="desc">Keeps track of how many days it has been since the last update.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!news</h5>
-                            <div class="desc">Retrieves the latest news from Rockstar Newswire.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!status</h5>
-                            <div class="desc">Displays the current Service Status from Rockstar Support.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!updates</h5>
-                            <div class="desc">Retrieves the latest game updates from Rockstar Support.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h4>Premium</h4>
-            <div class="desc">
-                These commands are additional functionality reserved for Patrons.
-            </div>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!title</h5>
-                            <div class="desc">Generates an RDO-styled title.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!toast</h5>
-                            <div class="desc">Generates an RDO-styled toast.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h4>Miscellaneous</h4>
+            <h4 id="miscellaneous">Miscellaneous</h4>
             <div class="desc">
                 These commands are mostly commands that are used to find information about the bot.
             </div>
@@ -151,7 +100,7 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!credits</h5>
+                            <h5><code>!credits</code></h5>
                             <div class="desc">Displays the different people that helped create this bot.</div>
                         </div>
                     </div>
@@ -159,15 +108,7 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!donate</h5>
-                            <div class="desc">Displays different links to support the bot and its owner.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!help</h5>
+                            <h5><code>!help</code></h5>
                             <div class="desc">Displays all the available commands.</div>
                         </div>
                     </div>
@@ -175,19 +116,117 @@ permalink: /guide-basics/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!level</h5>
-                            <div class="desc">Tells you your permission level for the current message location.</div>
+                            <h5><code>!links</code></h5>
+                            <div class="desc">Displays different links to various useful community resources.</div>
                         </div>
                     </div>
                 </div>
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5>!ping</h5>
-                            <div class="desc">Allows you to see how quickly the bot responds to messages.</div>
+                            <h5><code>!premium</code></h5>
+                            <div class="desc">Displays different links to support the bot and its owner.</div>
                         </div>
                     </div>
                 </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!time</code></h5>
+                            <div class="desc">Displays different times and timers relevant to different aspects of the
+                                game.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="premium">Premium</h4>
+            <div class="desc">
+                These commands are additional functionality reserved for Patrons.
+            </div>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!dailyimage</code></h5>
+                            <div class="desc">Generates the list of dailies in image format.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!location &lt;location&gt; ~ &lt;body&gt;</code></h5>
+                            <div class="desc">Generates an RDO-styled location card.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!title &lt;title&gt;</code></h5>
+                            <div class="desc">Generates an RDO-styled title.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!toast &lt;icon/emote?&gt; ~ &lt;title&gt; ~ &lt;body&gt;</code></h5>
+                            <div class="desc">Generates an RDO-styled toast.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="rockstar">Rockstar</h4>
+            <div class="desc">
+                These commands find information about the game that is not within the game.
+            </div>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!benefits</code></h5>
+                            <div class="desc">Retrieves the latest in-game benefits from Rockstar's Social Club.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!last</code></h5>
+                            <div class="desc">Displays the amount of days passed since the last update.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!news</code></h5>
+                            <div class="desc">Retrieves the latest news from Rockstar Newswire.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!status</code></h5>
+                            <div class="desc">Displays the current Service Status from Rockstar Support.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!updates</code></h5>
+                            <div class="desc">Retrieves the latest game updates from Rockstar Support.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="settings">Settings</h4>
+            <div class="desc">
+                A full list of the settings commands and a short guide on how to use them can be found on the <a
+                    href="/guide-settings">Settings Guide</a> page.
             </div>
             <div class="flex">
                 <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>

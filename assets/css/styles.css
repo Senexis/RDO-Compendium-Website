@@ -1144,6 +1144,10 @@ a.common-linked-item time:empty {
     color: #c00
 }
 
+section {
+    width: 100%;
+}
+
 section.common-line {
     padding: 0 10px
 }
@@ -1459,7 +1463,6 @@ body {
 
 a.common-linked-item span,a.common-linked-item time,body h1,body h2,body h3,body h4,body h5,body h6 {
     font-family: Rdr-lino;
-    text-transform: uppercase;
     letter-spacing: .01em;
     word-spacing: .07em;
     line-height: 1;

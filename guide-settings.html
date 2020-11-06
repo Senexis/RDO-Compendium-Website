@@ -25,150 +25,24 @@ permalink: /guide-settings/
             <div class="flex">
                 <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
             </div>
-            <h4>Role Settings</h4>
+            <h4 id="role-settings">Role Settings</h4>
             <div class="desc">
-                The <code>adminRole</code> (Administrator role) and <code>modRole</code> (Moderator role) settings are
-                used to control which users have access to certain commands. The Administrators can change settings for
-                you whenever they want, and Moderators are able to retrieve some stats about the bot at will. While the
-                Moderators role is currently underutilized, further abilities like the ability to purge the bot's
-                messages will be added in the future.<br><br>By default, these settings are set to the
-                <code>@Administrator</code> and <code>@Moderator</code> roles. These roles may not be available within
-                your Discord server. If this is the case, the <code>!settings</code> command will display these settings
-                as being set to "an invalid role". This also means that no user will be assigned the permissions that
-                come with it for safety.<br><br>To change these settings to your own roles, you can simply use the
-                <code>!settings set adminRole @YourRole</code> command. This will set the Administrator or Moderator
+                The <code>adminRole</code> (Administrator role) setting is used to control which users have access to
+                certain commands. The Administrators can change settings for you whenever they want.<br><br>By default,
+                the setting is set to the <code>@Administrator</code> role. Additionally, any user with the
+                <code>Administrator</code> permission will be detected as an administrator of the bot. This role may not
+                be available within your Discord server. If this is the case, the <code>!settings</code> command will
+                display this setting as being set to "an invalid role". This also means that no user will be assigned
+                the permissions that come with it for safety.<br><br>To change this setting to your own role, you can
+                simply use the <code>!settings set adminRole @YourRole</code> command. This will set the Administrator
                 role to the role of your choosing. You can check whether the setting was changed successfully at any
                 time using <code>!settings</code>. If at any point you want to reset a setting to the default role, you
-                are able to use the <code>!settings reset adminRole</code> command for both the Administrator role and
-                the Moderator role.
+                are able to use the <code>!settings reset adminRole</code> command for the Administrator role.
             </div>
             <div class="flex">
                 <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
             </div>
-            <h4>Ping Settings</h4>
-            <div class="desc">
-                <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The
-                <code>events</code>, <code>status</code>, <code>news</code>, and <code>patches</code> settings can be
-                used to ping a certain channel when an event is about to start, when the Rockstar Games Service Status
-                changes, when Rockstar publishes a new article, or when the game is updated and the patch notes are
-                available. This means that you can have a <code>#freeroam-events</code> channel where a message gets
-                posted by the bot 10 minutes before a certain event starts, or a <code>#service-status</code> channel
-                that will be notified when the Rockstar servers are experiencing issues and when those are
-                resolved.<br><br>By default, nothing will be pinged, so you'll need to manually change the settings
-                before you'll start receiving pings. To set it up, use the <code>!settings set events</code> command.
-                You can find the different options for all the ping settings in detail below.
-            </div>
-            <h5>Freeroam Events</h5>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set events all #channel</h5>
-                            <div class="desc">Changes the settings to ping all Freeroam Events in the
-                                <code>#channel</code> channel without mentioning any role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set events all #channel @Freeroam-Events</h5>
-                            <div class="desc">Changes the settings to ping all Freeroam Events in the
-                                <code>#channel</code> channel, mentioning the <code>@Freeroam-Events</code> role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set events TR #channel</h5>
-                            <div class="desc">Changes the settings to ping only the Trade Route event in the
-                                <code>#channel</code> channel without mentioning any role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set events TR #channel @Trade-Route</h5>
-                            <div class="desc">Changes the settings to ping only the Trade Route event in the
-                                <code>#channel</code> channel, mentioning the <code>@Role</code> role.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h5>Service Status</h5>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set status #channel</h5>
-                            <div class="desc">Changes the settings to ping Rockstar Service status changes in the
-                                <code>#channel</code> channel without mentioning any role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set status #channel @Service-Status</h5>
-                            <div class="desc">Changes the settings to ping Rockstar Service status changes in the
-                                <code>#channel</code> channel, mentioning the <code>@Service-Status</code> role.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h5>News</h5>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set news #channel</h5>
-                            <div class="desc">Changes the settings to ping Newswire changes in the
-                                <code>#channel</code> channel without mentioning any role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set news #channel @News</h5>
-                            <div class="desc">Changes the settings to ping Newswire changes in the
-                                <code>#channel</code> channel, mentioning the <code>@News</code> role.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h5>Patches</h5>
-            <div class="role-items flex">
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set patches #channel</h5>
-                            <div class="desc">Changes the settings to ping Game Update changes in the
-                                <code>#channel</code> channel without mentioning any role.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
-                    <div class="wrapper flex">
-                        <div class="flex icon-summary">
-                            <h5>!settings set patches #channel @Patches</h5>
-                            <div class="desc">Changes the settings to ping Game Update changes in the
-                                <code>#channel</code> channel, mentioning the <code>@Patches</code> role.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="desc">
-                If at any point you decide you no longer want to receive pings in a channel, you can use the
-                <code>!settings remove events all #channel</code> or <code>!settings remove status #channel</code>
-                commands for these settings. This will will disable the bot pinging the channels.
-            </div>
-            <div class="flex">
-                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
-            </div>
-            <h4>Utility Settings</h4>
+            <h4 id="utility-settings">Utility Settings</h4>
             <div class="desc">
                 The utility settings, specifically <code>language</code> and <code>prefix</code> will allow you to tweak
                 how the bot behaves. The language setting changes the language, and the prefix setting changes the
@@ -180,6 +54,223 @@ permalink: /guide-settings/
                 <code>!settings reset language</code> to reset the settings back to <code>!</code> and <code>en</code>
                 respectively.
             </div>
+            <div class="flex">
+                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
+            </div>
+            <h4 id="ping-settings">Ping Settings</h4>
+            <div class="desc">
+                <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The
+                <code>events</code>, <code>status</code>, <code>news</code>, and <code>patches</code> settings can be
+                used to ping a certain channel when an event is about to start, when the Rockstar Games Service Status
+                changes, when Rockstar publishes a new article, or when the game is updated and the patch notes are
+                available. This means that you can have a <code>#freeroam-events</code> channel where a message gets
+                posted by the bot 10 minutes before a certain event starts, or a <code>#service-status</code> channel
+                that will be notified when the Rockstar servers are experiencing issues and when those are
+                resolved.<br><br>By default, nothing will be pinged, so you'll need to manually change the settings
+                before you'll start receiving pings. To set it up, use the <code>!settings set events</code> command.
+                You can find the different options for all the ping settings in detail below.<br><br>If at any point you
+                decide you no longer want to receive pings in a channel, you can use the
+                <code>!settings remove events all #channel</code> or <code>!settings remove status #channel</code>
+                commands for these settings. This will will disable the bot pinging the channels.
+            </div>
+            <h5>Daily Challenges</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set daily #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Daily Challenges are known in the
+                                <code>#channel</code> channel without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set daily #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Daily Challenges are known in the
+                                <code>#channel</code> channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Freeroam Events</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set events all #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping all Freeroam Events in the <code>#channel</code> channel
+                                without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set events all #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping all Freeroam Events in the <code>#channel</code> channel,
+                                mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set events TR #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping only the Trade Route event in the <code>#channel</code>
+                                channel without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set events TR #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping only the Trade Route event in the <code>#channel</code>
+                                channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Madam Nazar</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set nazar #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Madam Nazar location is known in the
+                                <code>#channel</code> channel without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set nazar #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Madam Nazar location is known in the
+                                <code>#channel</code> channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>News</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set news #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Newswire changes in the <code>#channel</code> channel
+                                without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set news #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Newswire changes in the <code>#channel</code> channel,
+                                mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Service Status</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set status #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Rockstar Service status changes in the
+                                <code>#channel</code> channel without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set status #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Rockstar Service status changes in the
+                                <code>#channel</code> channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Patches</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set patches #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Game Update changes in the <code>#channel</code> channel
+                                without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set patches #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping Game Update changes in the <code>#channel</code> channel,
+                                mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>Weekly Collectibles Request</h5>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set nazar #channel</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known in
+                                the <code>#channel</code> channel without mentioning any role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set nazar #channel @Role</code></h5>
+                            <div class="desc">
+                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known in
+                                the <code>#channel</code> channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 </section>
