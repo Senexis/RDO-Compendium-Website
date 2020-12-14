@@ -57,6 +57,64 @@ permalink: /guide-settings/
             <div class="flex">
                 <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
             </div>
+            <h4 id="toggle-settings">Toggle Settings</h4>
+            <div class="desc">
+                The settings below can be used to customize the behavior of the bot. It allows you to toggle certain
+                features of the bot on (<code>1</code>) or off (<code>0</code>), depending on your preference. To use
+                these options, select the setting you want to change, then type either <code>0</code> or <code>1</code>.
+                An example would be <code>!settings set forceLanguage 1</code>, which would enable the
+                <code>forceLanguage</code> setting.
+            </div>
+            <div class="role-items flex">
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set forceLanguage &lt;0 or 1&gt;</code></h5>
+                            <div class="desc">
+                                If your server enforces a rule to only talk in a certain language, you can set this to
+                                <code>1</code> to force the bot to talk only in the language set using the
+                                <code>language</code> setting.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set preferImage &lt;0 or 1&gt;</code></h5>
+                            <div class="desc">
+                                <span style="color: #c00">Premium guilds only.</span> This setting allows you to ping
+                                Daily Challenges in image form instead of the regular text form.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set showCommunities &lt;0 or 1&gt;</code></h5>
+                            <div class="desc">
+                                This setting allows you to disable external communities in the <code>!links</code>
+                                command in case you view these as advertisements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5><code>!settings set showSuggestions &lt;0 or 1&gt;</code></h5>
+                            <div class="desc">
+                                This setting allows you to disable suggestions above <code>!find</code> commands if you
+                                find them distrating and want to decrease the size of search result messages.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-xxs-10 flex-xxs-offset-1 divider"></div>
+            </div>
             <h4 id="ping-settings">Ping Settings</h4>
             <div class="desc">
                 <span style="color: #c00">Note, available for Premium guilds only.</span><br><br>The
@@ -252,8 +310,8 @@ permalink: /guide-settings/
                         <div class="flex icon-summary">
                             <h5><code>!settings set nazar #channel</code></h5>
                             <div class="desc">
-                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known in
-                                the <code>#channel</code> channel without mentioning any role.
+                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known
+                                in the <code>#channel</code> channel without mentioning any role.
                             </div>
                         </div>
                     </div>
@@ -263,8 +321,8 @@ permalink: /guide-settings/
                         <div class="flex icon-summary">
                             <h5><code>!settings set nazar #channel @Role</code></h5>
                             <div class="desc">
-                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known in
-                                the <code>#channel</code> channel, mentioning the <code>@Role</code> role.
+                                Changes the settings to ping whenever the new Weekly Collectibles Request set is known
+                                in the <code>#channel</code> channel, mentioning the <code>@Role</code> role.
                             </div>
                         </div>
                     </div>
