@@ -42,6 +42,7 @@ google_analytics: UA-110509796-3
 # Build settings
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -56,6 +57,8 @@ exclude:
 compress_html:
   comments: ["<!-- ", " -->"]
 
-support_link: https://discord.gg/RBZVHQ7
-invite_link: https://discord.com/oauth2/authorize?client_id=721728527598354502&permissions=379968&scope=bot
-patreon_link: https://www.patreon.com/bePatron?u=27626198
+support_link: /links/discord/
+invite_link: /links/invite/
+patreon_link: /links/patreon/
+translate_link: /links/translate/
+twitter_link: /links/twitter/
