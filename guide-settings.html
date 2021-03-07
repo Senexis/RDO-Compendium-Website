@@ -206,7 +206,7 @@ permalink: /guide-settings/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5><code>!settings set events TR #channel</code></h5>
+                            <h5><code>!settings set events Trade Route #channel</code></h5>
                             <div class="desc">
                                 Changes the settings to ping only the Trade Route event in the <code>#channel</code>
                                 channel without mentioning any role.
@@ -217,10 +217,49 @@ permalink: /guide-settings/
                 <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
                     <div class="wrapper flex">
                         <div class="flex icon-summary">
-                            <h5><code>!settings set events TR #channel @Role</code></h5>
+                            <h5><code>!settings set events Trade Route #channel @Role</code></h5>
                             <div class="desc">
                                 Changes the settings to ping only the Trade Route event in the <code>#channel</code>
                                 channel, mentioning the <code>@Role</code> role.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>Multiple Events</h5>
+                            <div class="desc">
+                                To enable multiple events in one or more channels, you can use the commands multiple
+                                times. For example, if you want to ping both <code>Trade Route</code> and
+                                <code>Salvage</code> in a specific Role-oriented events channel, you would use both
+                                <code>!settings set events Trade Route #channel</code>, and then
+                                <code>!settings set events Salvage #channel</code>, just like in the examples above, and
+                                then the bot will ping both those events.<br><br>
+                                Please note that using <code>all</code> will ping all events. This means that using
+                                commands multiple times will not do anything and will continue to ping all events in
+                                that specific channel.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item scroll-reveal active">
+                    <div class="wrapper flex">
+                        <div class="flex icon-summary">
+                            <h5>Event Options</h5>
+                            <div class="desc">
+                                The options that are available to ping Freeroam Events for are as follows:<br><br>
+                                Bounty Hunter: <code>Manhunt</code>, and <code>Day of Reckoning</code><br>
+                                Naturalist: <code>Wild Animal Tagging</code>, and
+                                <code>Protect Legendary Animal</code><br>
+                                Collector: <code>Condor Egg</code>, and <code>Salvage</code><br>
+                                Trader: <code>Trade Route</code><br>
+                                Non-Role Events: <code>Master Archer</code>, <code>Fishing Challenge</code>,
+                                <code>King of the Castle</code>, <code>Cold Dead Hands</code>,
+                                <code>Railroad Baron</code>, <code>Fool's Gold</code>, <code>Wild Animal Kills</code>,
+                                <code>Dispatch Rider</code>, <code>Day of Reckoning</code>,
+                                <code>Wildlife Photographer</code>, and <code>Random Challenge</code><br><br>
+                                The above can all be used to create Freeroam Events pings using the commands above.
                             </div>
                         </div>
                     </div>
