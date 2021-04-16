@@ -2,9 +2,9 @@
   url: /
 - title: FAQ
   url: /faq/
-- title: Guide - Basics
-  url: /guide-basics/
-- title: Guide - Settings
-  url: /guide-settings/
 - title: Toasts
   url: /toasts/
+- title: Commands Guide
+  url: /guides/basics/
+- title: Settings Guide
+  url: /guides/settings/

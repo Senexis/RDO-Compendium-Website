@@ -1,5 +1,5 @@
-(function($){
-    $(window).on('load', function(){
+(function ($) {
+    $(window).on('load', function () {
         var STATE = 0;
         $("header#site-header .title").on("click", function () {
             $("body, header#site-header, nav#site-nav, #router").toggleClass("nav-active", STATE);
@@ -10,6 +10,13 @@
             $("header#site-header, nav#site-nav, #router").removeClass("nav-active");
             $("#router, footer#site-footer").removeClass("dimmable-active");
             STATE = 0;
+        });
+        $("code").on("click", function () {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(this).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
         });
     });
 })(jQuery);

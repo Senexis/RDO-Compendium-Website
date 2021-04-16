@@ -6631,6 +6631,11 @@ small {
     color: #828282;
 }
 
+code {
+    color: #fef390;
+    cursor: pointer;
+}
+
 h1 code,
 h2 code,
 h3 code,
