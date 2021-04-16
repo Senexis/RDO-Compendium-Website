@@ -1,0 +1,43 @@
+---
+layout: page
+title: Toasts
+permalink: /toasts/
+---
+
+<section class="top common-line">
+  <div class="content flex">
+    <div class="flex-xxs-12 flex-sm-10 flex-sm-offset-1">
+      <div class="desc">
+        Below you'll find a full list of items that can be used with the <code>!toast</code> command for Premium
+        users.<br>Have a little browse and when you've found the icon you like, use it in the bot to generate a toast of
+        your chosing.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="roles common-line">
+  <div class="flex role-description">
+    <div class="flex-xxs-12 flex-sm-10 flex-sm-offset-1">
+      <div class="role-items flex">
+        {% for image in site.static_files %}
+        {% if image.path contains 'img/toasts' %}
+        {% assign name = image.name | replace: ".png", "" %}
+        {% assign display = site.data.toasts[name] | strip_newlines %}
+        {% if display == "" %}
+        {% assign display = name %}
+        {% endif %}
+        <div class="item flex-xxs-12 flex-sm-6 scroll-reveal active">
+          <div class="wrapper flex">
+            <img class="icon" src="{{ site.baseurl }}{{ image.path }}" alt="{{ display }}">
+            <div class="flex icon-summary">
+              <h5>{{ display }}</h5>
+              <div class="desc">Usage: <code>!toast {{ display }} ~ &lt;title&gt; ~ &lt;body&gt;</code></div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

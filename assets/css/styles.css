@@ -4875,6 +4875,7 @@ roles h3 {
 }
 
 .roles .role-items .item .wrapper {
+    flex-wrap: nowrap;
     color: #fff;
     background-image: url(/assets/img/brush/gray-db988813b1da28f685ecb1b188eb35af.png);
     align-items: center;
@@ -4891,11 +4892,11 @@ roles h3 {
     transform: translateY(20px);
     opacity: 0.5;
     transition: transform 0.75s, opacity 0.75s;
+    height: 80px;
+    width: 80px;
 }
 
 .roles .role-items .item .wrapper .icon.focus {
-    height: 80px;
-    width: 80px;
     background: url(/assets/img/features/roles/icons/focus-3f39218503f8c0db41852be8030c05d3.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -4908,6 +4909,7 @@ roles h3 {
     transform: translateY(10px);
     opacity: 0.5;
     transition: transform 0.75s, opacity 0.75s;
+    overflow: hidden;
 }
 
 .roles .role-items .item .wrapper .icon-summary .desc {
@@ -6627,13 +6629,6 @@ videos .video-preview .icon {
 
 small {
     color: #828282;
-}
-
-code {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-    padding: 0 3px;
-    white-space: nowrap;
 }
 
 h1 code,
