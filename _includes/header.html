@@ -12,10 +12,13 @@
       {% if site.data.navigation %}
         {%- for nav in site.data.navigation -%}
           {%- if nav.title -%}
-            <a data-test="{{ page.url }}" {% if page.url == nav.url %}class="active" {% endif %}href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
+            <a data-test="{{ page.url }}" {% if page.url == nav.url %}class="active"{% endif %} href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
           {%- endif -%}
         {%- endfor -%}
       {% endif %}
+      <hr>
+      <a data-test="{{ page.url }}" {% if page.url == '/terms/' %}class="active"{% endif %} href="/terms/">Terms of Service</a>
+      <a data-test="{{ page.url }}" {% if page.url == '/privacy/' %}class="active"{% endif %} href="/privacy/">Privacy Policy</a>
       <hr>
     </div>
     <footer>
